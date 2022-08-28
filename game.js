@@ -13,6 +13,7 @@ function game(){
 }
 
 function keyPush(evt){
+    console.log("premuto il tasto: "+evt.keyCode);
     switch(evt.keyCode){
         case 37:
             console.log("premuto sx");
@@ -26,6 +27,12 @@ function keyPush(evt){
         case 40:
             console.log("premuto giù");
             break;
-
+        case 83:
+          salva();
+          break;
     }
+}
+
+function salva(){
+    console.log("premuto salva");
 }
